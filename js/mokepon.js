@@ -23,6 +23,11 @@ const contenedorAtaques = document.getElementById("contenedorAtaques");
 const sectionVerMapa = document.getElementById("ver-mapa");
 const mapa = document.getElementById("mapa");
 
+const botonArriba = document.getElementById("boton-arriba");
+const botonIzquierda = document.getElementById("boton-izquierda");
+const botonDerecha = document.getElementById("boton-derecha");
+const botonAbajo = document.getElementById("boton-abajo");
+
 let mokepones = [];
 let opcionDeMokepones;
 let opcionDeAtaques;
@@ -357,22 +362,31 @@ function pintarCanvas() {
 }
 
 function moverDerecha() {
+  botonDerecha.style.background = "aqua";
   mascotaJugadorObjeto.velocidadX = 5;
 }
 
 function moverIzquierda() {
+  botonIzquierda.style.background = "aqua";
   mascotaJugadorObjeto.velocidadX = -5;
 }
 
 function moverAbajo() {
+  botonAbajo.style.background = "aqua";
   mascotaJugadorObjeto.velocidadY = 5;
 }
 
 function moverArriba() {
+  botonArriba.style.background = "aqua";
   mascotaJugadorObjeto.velocidadY = -5;
 }
 
 function detenerMovimiento() {
+  botonDerecha.style.background = "#11478E";
+  botonIzquierda.style.background = "#11478E";
+  botonAbajo.style.background = "#11478E";
+  botonArriba.style.background = "#11478E";
+
   mascotaJugadorObjeto.velocidadX = 0;
   mascotaJugadorObjeto.velocidadY = 0;
 }
