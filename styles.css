@@ -160,6 +160,10 @@ input:checked + label {
   font-family: 'Poppins', sans-serif;
 }
 
+#ver-mapa button:hover {
+  cursor: pointer;
+}
+
 #mapa {
   border: 2px solid white;
   margin-bottom: 10px;
